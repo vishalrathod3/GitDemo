@@ -13,6 +13,7 @@
 		C75838811ED3FF3A00063C49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C758387F1ED3FF3A00063C49 /* Main.storyboard */; };
 		C75838831ED3FF3A00063C49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75838821ED3FF3A00063C49 /* Assets.xcassets */; };
 		C75838861ED3FF3A00063C49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75838841ED3FF3A00063C49 /* LaunchScreen.storyboard */; };
+		C758388F1ED4082300063C49 /* TestingFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = C758388E1ED4082300063C49 /* TestingFile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		C75838821ED3FF3A00063C49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C75838851ED3FF3A00063C49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C75838871ED3FF3A00063C49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C758388D1ED4082300063C49 /* GitDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GitDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		C758388E1ED4082300063C49 /* TestingFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestingFile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +65,13 @@
 				C758387A1ED3FF3A00063C49 /* AppDelegate.m */,
 				C758387C1ED3FF3A00063C49 /* ViewController.h */,
 				C758387D1ED3FF3A00063C49 /* ViewController.m */,
+				C758388E1ED4082300063C49 /* TestingFile.swift */,
 				C758387F1ED3FF3A00063C49 /* Main.storyboard */,
 				C75838821ED3FF3A00063C49 /* Assets.xcassets */,
 				C75838841ED3FF3A00063C49 /* LaunchScreen.storyboard */,
 				C75838871ED3FF3A00063C49 /* Info.plist */,
 				C75838761ED3FF3A00063C49 /* Supporting Files */,
+				C758388D1ED4082300063C49 /* GitDemo-Bridging-Header.h */,
 			);
 			path = GitDemo;
 			sourceTree = "<group>";
@@ -110,6 +115,7 @@
 				TargetAttributes = {
 					C75838721ED3FF3A00063C49 = {
 						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -152,6 +158,7 @@
 			files = (
 				C758387E1ED3FF3A00063C49 /* ViewController.m in Sources */,
 				C758387B1ED3FF3A00063C49 /* AppDelegate.m in Sources */,
+				C758388F1ED4082300063C49 /* TestingFile.swift in Sources */,
 				C75838781ED3FF3A00063C49 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,11 +281,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SmartWebTech.GitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GitDemo/GitDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -286,11 +297,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = GitDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.SmartWebTech.GitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GitDemo/GitDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
