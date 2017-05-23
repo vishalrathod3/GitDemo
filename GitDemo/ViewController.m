@@ -17,7 +17,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"my bad");
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Hello" message:@"Git" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil, nil];
+    [alert show];
 }
 
 
